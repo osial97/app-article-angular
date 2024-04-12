@@ -1,0 +1,46 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Profilo Utente</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      <button
+        type="button"
+        class="fancy-button"
+        [routerLink]="['./editusername']"
+      >
+        edit
+      </button>
+      Username: {{ userLogged?.username }}
+    </p>
+  </mat-card-content>
+  <mat-card-content>
+    <p>
+      <button
+        type="button"
+        class="fancy-button"
+        [routerLink]="['./editpassword']"
+      >
+        edit
+      </button>
+      Password: {{ userLogged?.password }}
+    </p>
+  </mat-card-content>
+  @if(userLogged?.nomePenna!=""){<mat-card-content>
+    <p>
+      <button
+        type="button"
+        class="fancy-button"
+        [routerLink]="['./editnomepenna']"
+      >
+        edit
+      </button>
+      Nome Penna: {{ userLogged?.nomePenna }}
+    </p> </mat-card-content
+  >}
+  <mat-card-content>
+    <p>Ruolo: {{ userLogged?.ruolo }}</p>
+  </mat-card-content>
+  <button (click)="logout()">Logout</button>
+</mat-card>
+<router-outlet></router-outlet>

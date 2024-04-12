@@ -1,0 +1,11 @@
+<form [formGroup]="nomePennaForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="nomePenna"
+      >Modifica il Nome Penna di {{ user?.username }}</label
+    >
+    <input id="nomePenna" type="text" formControlName="nomePenna" />
+  </div>
+  <button class="button" type="submit">Confirm</button>
+  <br />
+  <button class="button" type="fancy-button" routerLink="/user">Cancel</button>
+</form>

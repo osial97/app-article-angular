@@ -14,21 +14,6 @@ const routesArticle: Routes = [
     component: ArticleDetailComponent,
     resolve: { article: articleDetailResolver },
   },
-  //   {
-  //     path: 'details/:id',
-  //     component: UserDetailsComponent,
-  //     resolve: { student: userDetailNonNullableResolver },
-  //   },
-  //   {
-  //     path: 'form',
-  //     component: UserFormComponent,
-  //     resolve: { editStudent: userDetailResolver },
-  //   },
-  // Percorso invoca resolve
-  // ResolveData { chiave: ResolveFunction<tipoRitorno> }
-  // Se ritorno della ResolveFunction !== tipoRitorno => non eseguo navigazione
-  // Se ritorno della ResolveFunction === tipoRitorno => eseguo navigazione
-  //  { path: '', redirectTo: 'list', pathMatch: 'full' },
 ];
 
 @NgModule({

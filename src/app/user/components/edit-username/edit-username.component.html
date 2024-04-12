@@ -1,0 +1,9 @@
+<form [formGroup]="usernameForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Modifica lo username di {{ user?.username }}</label>
+    <input id="username" type="text" formControlName="username" />
+  </div>
+  <button class="button" type="submit">Confirm</button>
+  <br />
+  <button class="button" type="fancy-button" routerLink="/user">Cancel</button>
+</form>

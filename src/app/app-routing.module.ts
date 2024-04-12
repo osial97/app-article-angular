@@ -17,8 +17,20 @@ const routes: Routes = [
     loadChildren: () =>
       import('./article/article.module').then((m) => m.ArticleModule),
     title: 'Articles',
+    canActivate: [authGuard],
   },
-  { path: '**', component: PageNotFoundComponent },
+  {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
+    title: 'User',
+    canActivate: [authGuard],
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+    title: 'Not Found',
+    canActivate: [authGuard],
+  },
 ];
 
 @NgModule({

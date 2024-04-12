@@ -42,7 +42,7 @@
       "id": "1",
       "username": "autore1",
       "password": "password1",
-      "nomePenna": "Mario Rossi",
+      "nomePenna": "Marino Rossi",
       "ruolo": "Scrittore"
     },
     {
@@ -60,7 +60,7 @@
       "ruolo": "Scrittore"
     },
     {
-      "username": "lettore",
+      "username": "lettore2",
       "password": "lettore",
       "nomePenna": "",
       "ruolo": "Lettore",
