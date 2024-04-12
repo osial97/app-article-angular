@@ -26,4 +26,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.authService.logout();
     this.router.navigate([this.authService.redirectNoAuthUrl]);
   }
+  goToForm() {
+    this.router.navigate(['/article/formArticle']);
+  }
 }

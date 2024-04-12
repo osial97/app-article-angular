@@ -3,7 +3,7 @@ export class Article {
   titolo!: string;
   testo!: string;
   categoria!: string;
-  autore!: string; // (id autore => ricavare nomePenna);
+  autore!: string | number; // (id autore => ricavare nomePenna);
   dataCreazione!: Date | string;
   dataModifica!: Date | string;
   constructor(article: Partial<Article>) {

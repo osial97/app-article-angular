@@ -12,7 +12,13 @@ import { Article } from '../../core/models/article';
 export class ArticleService {
   apiUrl: string = 'http://localhost:3000';
   constructor(private http: HttpClient) {}
-
+  addArticle(newArticle: Article): Observable<Article> {
+    return this.http.post<Article>(`${this.apiUrl}/articles`, newArticle).pipe(
+      map((art) => {
+        return art;
+      })
+    );
+  }
   getArticles(): Observable<Array<Article>> {
     return this.http.get<Array<Article>>(`${this.apiUrl}/articles`).pipe(
       map((articles) => {

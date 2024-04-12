@@ -8,9 +8,15 @@ import { EditUsernameComponent } from './components/edit-username/edit-username.
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditPasswordComponent } from './components/edit-password/edit-password.component';
 import { EditNomepennaComponent } from './components/edit-nomepenna/edit-nomepenna.component';
+import { FormArticoloComponent } from '../article/form-articolo/form-articolo.component';
 
 @NgModule({
-  declarations: [DashboardComponent, EditUsernameComponent, EditPasswordComponent, EditNomepennaComponent],
+  declarations: [
+    DashboardComponent,
+    EditUsernameComponent,
+    EditPasswordComponent,
+    EditNomepennaComponent,
+  ],
   imports: [
     CommonModule,
     HttpClientModule,

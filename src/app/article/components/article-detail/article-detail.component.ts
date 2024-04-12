@@ -22,7 +22,7 @@ export class ArticleDetailComponent implements OnInit {
 
       this.article = article;
       this.userService
-        .getUserById(this.article.autore)
+        .getUserById(this.article.autore.toString())
         .pipe()
         .subscribe((user) => {
           console.log(this.article);

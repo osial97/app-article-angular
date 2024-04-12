@@ -41,6 +41,8 @@
   <mat-card-content>
     <p>Ruolo: {{ userLogged?.ruolo }}</p>
   </mat-card-content>
+  @if(userLogged?.ruolo==='Scrittore'){
+  <button (click)="goToForm()">Pubblica nuovo articolo</button>}
   <button (click)="logout()">Logout</button>
 </mat-card>
 <router-outlet></router-outlet>

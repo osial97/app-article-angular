@@ -1,0 +1,35 @@
+<h2>Nuovo Articolo</h2>
+<form [formGroup]="articleForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="titolo">Titolo</label>
+    <input id="titolo" type="text" formControlName="titolo" />
+    <div
+      *ngIf="titolo.invalid && (titolo.dirty || titolo.touched)"
+      class="alert"
+    >
+      <div *ngIf="titolo.hasError('required')">Il titolo è obbligatorio</div>
+    </div>
+  </div>
+  <div>
+    <label for="testo">Testo</label>
+    <input id="testo" type="text" formControlName="testo" />
+    <div *ngIf="testo.invalid && (testo.dirty || testo.touched)" class="alert">
+      <div *ngIf="testo.hasError('required')">Il testo è obbligatorio</div>
+    </div>
+  </div>
+  <div>
+    <label for="categoria">Categoria</label>
+    <select id="categoria" formControlName="categoria">
+      <option *ngFor="let cat of Categories" [ngValue]="cat">
+        {{ cat }}
+      </option>
+      <div *ngIf="categoria.hasError('required')">
+        La categoria è obbligatoria
+      </div>
+    </select>
+  </div>
+  <button class="button" type="submit" [disabled]="articleForm.invalid">
+    Pubblica
+  </button>
+  <button class="button" (click)="goToDashboard()">Annulla</button>
+</form>

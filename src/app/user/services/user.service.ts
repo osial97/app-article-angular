@@ -10,6 +10,7 @@ import { BehaviorSubject, map } from 'rxjs';
 })
 export class UserService {
   userEdited$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  static Categories: any;
   updateUser(id: string | number | undefined, user: Partial<User>) {
     return this.http.patch(`${this.apiUrl}/users/${id}`, user).pipe(
       map((user) => {

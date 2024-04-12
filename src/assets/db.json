@@ -35,6 +35,24 @@
       "autore": "3",
       "dataCreazione": "2024/07/01",
       "dataModifica": ""
+    },
+    {
+      "titolo": "prova1",
+      "testo": "prova",
+      "categoria": "cultura",
+      "autore": "2",
+      "dataCreazione": "Fri Apr 12 2024",
+      "dataModifica": "",
+      "id": "4i3H9j9"
+    },
+    {
+      "titolo": "prova2",
+      "testo": "dasdasd",
+      "categoria": "cultura",
+      "autore": "2",
+      "dataCreazione": "Fri Apr 12 2024",
+      "dataModifica": "",
+      "id": "jOf5FQp"
     }
   ],
   "users": [
