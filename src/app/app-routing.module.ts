@@ -5,6 +5,12 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
+  {
+    path: 'article',
+    loadChildren: () =>
+      import('./article/article.module').then((m) => m.ArticleModule),
+    title: 'Articles',
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 

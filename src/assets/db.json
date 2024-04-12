@@ -6,7 +6,7 @@
       "testo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo commodi neque aspernatur magni, fugiat quia, inventore illo unde, totam perferendis perspiciatis? Eveniet ab dolores laborum minima ex ea facere debitis deleniti similique, exercitationem amet minus in reiciendis, blanditiis illum deserunt sed voluptas,",
       "categoria": "cultura",
       "autore": "1",
-      "dataCreazione": "2024/05/01",
+      "dataCreazione": "2024/01/05",
       "dataModifica": ""
     },
     {
@@ -15,7 +15,7 @@
       "testo": "Eius animi eos? Sequi vero quod unde eum ratione quam nihil beatae debitis facere neque, sint quia nam, quaerat molestiae magnam distinctio, repudiandae hic voluptatum blanditiis ipsa! Ipsam, porro quaerat harum animi sit veritatis autem dicta mollitia voluptates commodi quas quam sequi aperiam vel incidunt blanditiis vero. Dolore laborum nam dolor, dolorem deserunt totam reprehenderit",
       "categoria": "sport",
       "autore": "2",
-      "dataCreazione": "2024/05/01",
+      "dataCreazione": "2024/01/05",
       "dataModifica": ""
     },
     {
@@ -24,7 +24,16 @@
       "testo": "Temporibus eaque ipsam neque unde! Velit qui dignissimos similique sed aliquam laborum praesentium iure libero fuga, iusto nam minus iste quae repellat at voluptates suscipit totam nulla molestias sequi? Ipsa voluptate voluptatem blanditiis facilis vero voluptatibus sunt, molestias, dignissimos qui unde odio",
       "categoria": "politica",
       "autore": "3",
-      "dataCreazione": "2024/05/01",
+      "dataCreazione": "2023/01/05",
+      "dataModifica": "2024/06/03"
+    },
+    {
+      "id": "4",
+      "titolo": "articolo4",
+      "testo": "Temporibus eaque ipsam neque unde! Velit qui dignissimos similique sed aliquam laborum praesentium iure libero fuga, iusto nam minus iste quae repellat at voluptates suscipit totam nulla molestias sequi? Ipsa voluptate voluptatem blanditiis facilis vero voluptatibus sunt, molestias, dignissimos qui unde odio",
+      "categoria": "politica",
+      "autore": "3",
+      "dataCreazione": "2024/07/01",
       "dataModifica": ""
     }
   ],

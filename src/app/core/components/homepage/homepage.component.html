@@ -1,1 +1,34 @@
-<p>homepage works!</p>
+<div>
+  <h2 color="primary">Articoli per data</h2>
+  <button
+    mat-button
+    color="primary"
+    [routerLink]="'/article'"
+    (click)="setCategory('all')"
+  >
+    Tutte le categorie
+  </button>
+  <button
+    mat-button
+    color="primary"
+    [routerLink]="'/article'"
+    (click)="setCategory('sport')"
+  >
+    Sport
+  </button>
+  <button
+    mat-button
+    color="primary"
+    [routerLink]="'/article'"
+    (click)="setCategory('politica')"
+  >
+    Politica</button
+  ><button
+    mat-button
+    color="primary"
+    [routerLink]="'/article'"
+    (click)="setCategory('cultura')"
+  >
+    Cultura
+  </button>
+</div>

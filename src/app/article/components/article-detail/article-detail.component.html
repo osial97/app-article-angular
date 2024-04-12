@@ -1,0 +1,16 @@
+<div>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ article.titolo }}</mat-card-title>
+      <mat-card-subtitle>{{ article.categoria }}</mat-card-subtitle>
+      <mat-card-subtitle
+        >Autore: {{ article.autore }}, Data Creazione:
+        {{ article.dataCreazione }} @if (article.dataModifica!="") {Data
+        Modifica: {{ article.dataModifica }}}</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ article.testo }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
