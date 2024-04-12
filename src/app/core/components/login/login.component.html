@@ -1,0 +1,57 @@
+<form [formGroup]="loginForm">
+  <div>
+    <mat-form-field>
+      <mat-label for="username">Username</mat-label>
+      <input
+        matInput
+        id="username"
+        [type]="'text'"
+        formControlName="username"
+      />
+      <div
+        *ngIf="username.invalid && (username.dirty || username.touched)"
+        class="alert"
+      >
+        <div *ngIf="username.hasError('usernameInUse')">
+          Username already in use
+        </div>
+      </div>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label for="password">Enter your password</mat-label>
+      <input
+        matInput
+        [type]="hide ? 'password' : 'text'"
+        id="password"
+        formControlName="password"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <!-- <label for="password">Password</label>
+    <input id="password" type="password" formControlName="password" /> -->
+  </div>
+
+  <div *ngIf="isWrongAttempt$ | async" class="alert">
+    <div>{{ isLoginAttempt ? "Log in" : "Sign in" }} invalid</div>
+  </div>
+
+  <div class="btn-row">
+    <button type="button" [disabled]="loginForm.invalid" (click)="login()">
+      Log In
+    </button>
+    <button type="button" [disabled]="loginForm.invalid" (click)="login(false)">
+      Sign In
+    </button>
+  </div>
+</form>

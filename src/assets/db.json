@@ -58,6 +58,13 @@
       "password": "password3",
       "nomePenna": "Anna Verdi",
       "ruolo": "Scrittore"
+    },
+    {
+      "username": "lettore",
+      "password": "lettore",
+      "nomePenna": "",
+      "ruolo": "Lettore",
+      "id": "sBi95Do"
     }
   ]
 }

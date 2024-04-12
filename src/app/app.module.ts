@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { TopBarComponent } from './core/components/top-bar/top-bar.component';
 import { HomepageComponent } from './core/components/homepage/homepage.component';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
     HomepageComponent,
     PageNotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule, MaterialModule, HttpClientModule],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
